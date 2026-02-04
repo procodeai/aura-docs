@@ -4,6 +4,9 @@ export default defineConfig({
   title: "ProCode AI",
   description: "Build Living, Breathing Digital Organisms",
 
+  // Base path for GitHub Pages (repo name)
+  base: "/aura-docs/",
+
   head: [
     ["link", { rel: "icon", href: "/favicon.ico" }],
     ["meta", { name: "theme-color", content: "#10b981" }],
