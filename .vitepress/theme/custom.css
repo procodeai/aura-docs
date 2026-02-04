@@ -1,0 +1,212 @@
+/* ProCode AI - Mintlify-Style Theme with Light/Dark Support */
+
+/* ===== BRAND COLORS (Both Themes) ===== */
+:root {
+  --vp-c-brand-1: #10b981;
+  --vp-c-brand-2: #34d399;
+  --vp-c-brand-3: #059669;
+  --vp-c-brand-soft: rgba(16, 185, 129, 0.14);
+
+  /* Button (Both themes) */
+  --vp-button-brand-border: transparent;
+  --vp-button-brand-text: #ffffff;
+  --vp-button-brand-bg: #10b981;
+  --vp-button-brand-hover-border: transparent;
+  --vp-button-brand-hover-text: #ffffff;
+  --vp-button-brand-hover-bg: #059669;
+  --vp-button-brand-active-border: transparent;
+  --vp-button-brand-active-text: #ffffff;
+  --vp-button-brand-active-bg: #047857;
+}
+
+/* ===== LIGHT THEME ===== */
+:root {
+  --vp-c-bg: #ffffff;
+  --vp-c-bg-alt: #f9fafb;
+  --vp-c-bg-elv: #ffffff;
+  --vp-c-bg-soft: #f3f4f6;
+
+  --vp-c-text-1: #111827;
+  --vp-c-text-2: #4b5563;
+  --vp-c-text-3: #9ca3af;
+
+  --vp-c-border: #e5e7eb;
+  --vp-c-divider: #e5e7eb;
+  --vp-c-gutter: #f3f4f6;
+
+  --vp-code-block-bg: #f9fafb;
+  --vp-code-line-highlight-color: rgba(16, 185, 129, 0.08);
+
+  --vp-sidebar-bg-color: #ffffff;
+  --vp-nav-bg-color: rgba(255, 255, 255, 0.8);
+}
+
+/* ===== DARK THEME ===== */
+.dark {
+  --vp-c-bg: #0a0a0a;
+  --vp-c-bg-alt: #111111;
+  --vp-c-bg-elv: #1a1a1a;
+  --vp-c-bg-soft: #161616;
+
+  --vp-c-text-1: #ffffff;
+  --vp-c-text-2: #a3a3a3;
+  --vp-c-text-3: #737373;
+
+  --vp-c-border: #262626;
+  --vp-c-divider: #1f1f1f;
+  --vp-c-gutter: #1a1a1a;
+
+  --vp-code-block-bg: #0f0f0f;
+  --vp-code-line-highlight-color: rgba(16, 185, 129, 0.08);
+
+  --vp-sidebar-bg-color: #0a0a0a;
+  --vp-nav-bg-color: rgba(10, 10, 10, 0.8);
+}
+
+/* ===== CUSTOM SCROLLBAR ===== */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--vp-c-bg);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--vp-c-border);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--vp-c-text-3);
+}
+
+/* ===== NAVIGATION ===== */
+.VPNav {
+  background: var(--vp-nav-bg-color) !important;
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--vp-c-border) !important;
+}
+
+/* ===== SIDEBAR ===== */
+.VPSidebar {
+  background: var(--vp-sidebar-bg-color) !important;
+  border-right: 1px solid var(--vp-c-border) !important;
+}
+
+.VPSidebarItem.is-active > .item > .link > .text {
+  color: var(--vp-c-brand-1) !important;
+}
+
+/* ===== CONTENT CARDS ===== */
+.VPFeature {
+  background: var(--vp-c-bg-soft) !important;
+  border: 1px solid var(--vp-c-border) !important;
+  border-radius: 12px !important;
+  transition: all 0.2s ease;
+}
+
+.VPFeature:hover {
+  border-color: var(--vp-c-brand-1) !important;
+  transform: translateY(-2px);
+}
+
+/* ===== HERO SECTION ===== */
+.VPHero .name {
+  background: linear-gradient(135deg, #10b981 0%, #34d399 50%, #06b6d4 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.VPHero .tagline {
+  color: var(--vp-c-text-2) !important;
+}
+
+/* ===== CODE BLOCKS ===== */
+.vp-code-group .tabs label {
+  background: var(--vp-c-bg-soft) !important;
+  border-color: var(--vp-c-border) !important;
+}
+
+.vp-code-group .tabs label.active {
+  color: var(--vp-c-brand-1) !important;
+}
+
+div[class*="language-"] {
+  background: var(--vp-code-block-bg) !important;
+  border: 1px solid var(--vp-c-border) !important;
+  border-radius: 8px !important;
+}
+
+/* ===== TABLES ===== */
+.vp-doc table {
+  border: 1px solid var(--vp-c-border);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.vp-doc th {
+  background: var(--vp-c-bg-soft) !important;
+  color: var(--vp-c-text-1) !important;
+}
+
+.vp-doc tr {
+  background: var(--vp-c-bg) !important;
+  border-color: var(--vp-c-border) !important;
+}
+
+.vp-doc tr:nth-child(2n) {
+  background: var(--vp-c-bg-soft) !important;
+}
+
+/* ===== CALLOUTS / CONTAINERS ===== */
+.vp-doc .custom-block {
+  border-radius: 8px !important;
+  border: 1px solid var(--vp-c-border) !important;
+}
+
+.vp-doc .custom-block.tip {
+  background: rgba(16, 185, 129, 0.1) !important;
+  border-color: rgba(16, 185, 129, 0.3) !important;
+}
+
+.vp-doc .custom-block.warning {
+  background: rgba(245, 158, 11, 0.1) !important;
+  border-color: rgba(245, 158, 11, 0.3) !important;
+}
+
+.vp-doc .custom-block.danger {
+  background: rgba(239, 68, 68, 0.1) !important;
+  border-color: rgba(239, 68, 68, 0.3) !important;
+}
+
+/* ===== SEARCH ===== */
+.DocSearch-Button {
+  background: var(--vp-c-bg-soft) !important;
+  border: 1px solid var(--vp-c-border) !important;
+}
+
+/* ===== FOOTER ===== */
+.VPFooter {
+  border-top: 1px solid var(--vp-c-border) !important;
+  background: var(--vp-c-bg) !important;
+}
+
+/* ===== LINKS ===== */
+.vp-doc a {
+  color: var(--vp-c-brand-1) !important;
+  text-decoration: none !important;
+}
+
+.vp-doc a:hover {
+  color: var(--vp-c-brand-2) !important;
+  text-decoration: underline !important;
+}
+
+/* ===== BADGE ===== */
+.VPBadge {
+  background: var(--vp-c-brand-soft) !important;
+  color: var(--vp-c-brand-1) !important;
+}
