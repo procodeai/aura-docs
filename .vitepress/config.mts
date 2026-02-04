@@ -119,7 +119,7 @@ export default defineConfig({
 
     // Edit Link
     editLink: {
-      pattern: "https://github.com/procodeai/docs/edit/main/:path",
+      pattern: "https://github.com/procodeai/aura-docs/edit/main/:path",
       text: "Edit this page on GitHub",
     },
 
