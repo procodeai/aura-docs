@@ -5,6 +5,8 @@ description: Expert guide on contributing to the ProCodeAI documentation site.
 
 # ProCodeAI Docs - Agent Skill
 
+> ⚠️ **IMPORTANT RULE**: Always ASK the user before running `git commit` or `git push`. Never auto-commit or auto-push without explicit user approval.
+
 This skill enables AI agents to effectively work with the ProCodeAI documentation repository.
 
 ## Project Overview
