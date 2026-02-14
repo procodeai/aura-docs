@@ -7,7 +7,7 @@ This schema describes how [[appName]]’s local LLM will persist long-term perso
   "version": 1,
   "persona": {
     "id": "user-uuid",
-    "displayName": "Deepak",
+    "displayName": "User",
     "tone": "supportive",
     "pronouns": "he/him",
     "bio": "Short free-form summary the LLM can read before acting"
