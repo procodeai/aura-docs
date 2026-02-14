@@ -1,4 +1,4 @@
-# Aura Workflow Architecture Design
+# [[appName]] Workflow Architecture Design
 
 ## Vision
 
@@ -20,13 +20,13 @@ A visual workflow builder for personal AI assistants where **non-technical users
 
 ### Unreal Blueprint Comparison
 
-| UE Blueprint | Aura Equivalent       | Notes                        |
-| ------------ | --------------------- | ---------------------------- |
-| Event Graph  | **Agent Graph**       | Main workflow                |
-| Function     | **Subflow**           | Reusable, has inputs/outputs |
-| Macro        | **Template** (future) | Copy-paste node groups       |
-| Event        | **Trigger Node**      | Voice, Schedule, Webhook     |
-| Variable     | **Context/Memory**    | AI memory system             |
+| UE Blueprint | [[appName]] Equivalent | Notes                        |
+| ------------ | ---------------------- | ---------------------------- |
+| Event Graph  | **Agent Graph**        | Main workflow                |
+| Function     | **Subflow**            | Reusable, has inputs/outputs |
+| Macro        | **Template** (future)  | Copy-paste node groups       |
+| Event        | **Trigger Node**       | Voice, Schedule, Webhook     |
+| Variable     | **Context/Memory**     | AI memory system             |
 
 ---
 

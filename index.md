@@ -2,7 +2,7 @@
 layout: home
 
 hero:
-  name: "ProCode AI"
+  name: "[[companyName]]"
   text: "Build Living, Breathing Digital Organisms"
   tagline: The visual agent programming platform for macOS
   actions:
@@ -11,7 +11,7 @@ hero:
       link: /guide/introduction
     - theme: alt
       text: View on GitHub
-      link: https://github.com/procodeai
+      link: "[[githubUrl]]"
 
 features:
   - icon: 🧠
@@ -34,18 +34,18 @@ features:
     details: Share and discover community-built agents. Install new capabilities with one click.
 ---
 
-## Why ProCode AI?
+## Why [[companyName]]?
 
-Traditional automation tools like Zapier and n8n are powerful, but they lack **intelligence**. ProCode AI agents don't just execute scripts—they **perceive**, **reason**, and **act**.
+Traditional automation tools like Zapier and n8n are powerful, but they lack **intelligence**. [[companyName]] agents don't just execute scripts—they **perceive**, **reason**, and **act**.
 
 ::: tip Example
 **Old way**: "If email received, send to Slack."  
-**ProCode way**: "Understand my work patterns. When I get an urgent email during deep work, queue it. When I take a break, summarize and notify."
+**[[appName]] way**: "Understand my work patterns. When I get an urgent email during deep work, queue it. When I take a break, summarize and notify."
 :::
 
 ## Quick Links
 
-- 📖 [Introduction](/guide/introduction) - What is ProCode AI?
+- 📖 [Introduction](/guide/introduction) - What is [[companyName]]?
 - 🚀 [Installation](/guide/installation) - Download and setup
 - 🎨 [Architect Overview](/architect/overview) - Learn the visual editor
 - 🔌 [Actions API](/api/actions) - Available system actions
